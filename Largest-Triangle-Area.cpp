@@ -8,9 +8,9 @@ public:
         double max = 0;
         for(int i = 0 ; i < points.size() ; i++)
         {
-            for(int j = 0; j < points.size() ; j++)
+            for(int j = i+1; j < points.size() ; j++)
             {
-                for(int z = 0 ; z < points.size() ; z++)
+                for(int z = j+1 ; z < points.size() ; z++)
                 {
                     double area = 0.5 * abs(points[i][0] * (points[j][1] - points[z][1]) + 
                                             points[j][0] * (points[z][1] - points[i][1]) + 
